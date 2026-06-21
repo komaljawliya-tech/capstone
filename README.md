@@ -271,39 +271,72 @@ F --> G[Progress Tracking]
 G --> H[Career Growth]
 ```
 
----
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```text
-ai-career-mentor/
+capstone/
+│
+├── index.html          # Main application structure
+├── style.css           # Application styling and responsive design
+├── app.js              # Core application logic and DOM interactions
+├── careerData.js       # Career paths, skills, and roadmap data
+└── README.md           # Project documentation
+```
 
-├── frontend/
-│
-│   ├── public/
-│   │
-│   └── src/
-│       ├── components/
-│       ├── pages/
-│       ├── services/
-│       ├── data/
-│       ├── hooks/
-│       ├── types/
-│       ├── App.tsx
-│       └── main.tsx
-│
-├── backend/
-│
-│   ├── app/
-│   │   ├── routes/
-│   │   ├── services/
-│   │   ├── models/
-│   │   ├── schemas/
-│   │   └── main.py
-│
-├── README.md
-├── package.json
-└── requirements.txt
+### File Overview
+
+#### 📄 index.html
+
+Contains the complete user interface structure including:
+
+* Navigation Menu
+* Career Selection Interface
+* Skill Information Panels
+* Learning Roadmaps
+* Responsive Layout Components
+
+#### 🎨 style.css
+
+Handles:
+
+* Modern UI Design
+* Responsive Layout
+* Typography
+* Animations & Hover Effects
+* Mobile Compatibility
+
+#### ⚙️ app.js
+
+Responsible for:
+
+* Dynamic Content Updates
+* User Interactions
+* Career Selection Logic
+* DOM Manipulation
+* Event Handling
+
+#### 📊 careerData.js
+
+Stores:
+
+* Career Roles
+* Required Skills
+* Technology Stacks
+* Learning Roadmaps
+* Career Guidance Data
+
+#### 📚 README.md
+
+Contains:
+
+* Project Overview
+* Features
+* Technologies Used
+* Installation Guide
+* Documentation
+
+```
 ```
 
 ---
