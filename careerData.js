@@ -1160,5 +1160,1155 @@ export const careerData = {
         { channel: "NetworkChuck", desc: "High-energy tutorials covering Linux CLI, networking protocols, Docker container setups, and Python basics." }
       ]
     }
+  },
+
+  mobile_developer: {
+    title: "Mobile App Developer (iOS/Android)",
+    shortDesc: "Create highly responsive and interactive native or cross-platform mobile applications.",
+    marketOutlook: {
+      growth: "+19% Projected 10-Yr Growth",
+      demand: "High",
+      topIndustries: ["Finance & Banking", "Entertainment & Media", "Health & Fitness", "E-Commerce", "On-Demand Delivery"]
+    },
+    salary: {
+      entry: 76000,
+      mid: 110000,
+      senior: 160000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: Core Programming & UI Layouts",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Master Swift (iOS) or Kotlin (Android) syntax and type system",
+          "Learn declarative layout paradigms: SwiftUI or Jetpack Compose",
+          "Understand mobile design principles and standard layout structures"
+        ]
+      },
+      {
+        title: "Stage 2: State Management & Device Features",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Master state bindings, view models, and reactive programming flows",
+          "Access device APIs: Camera, GPS Location, local alerts, and device storage",
+          "Connect apps to remote RESTful backends and serialize JSON responses"
+        ]
+      },
+      {
+        title: "Stage 3: Cross-Platform Frameworks & CoreData",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Learn React Native or Flutter framework architecture basics",
+          "Implement offline-first capabilities using CoreData, Room, or SQLite databases",
+          "Understand authentication flows and secure storage keychain wrappers"
+        ]
+      },
+      {
+        title: "Stage 4: App Store Deployments & CI/CD",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Audit app performance using instruments (memory leaks, thread locks)",
+          "Configure provisioning profiles, developer certificates, and credentials",
+          "Build and submit apps to Apple App Store Connect and Google Play Console"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "Swift / SwiftUI (iOS Native)", category: "Programming" },
+        { name: "Kotlin / Jetpack Compose (Android)", category: "Programming" },
+        { name: "React Native / Flutter", category: "Cross-Platform" },
+        { name: "RESTful API & JSON Serialization", category: "Networking" },
+        { name: "CoreData / SQLite / Realm", category: "Local Databases" },
+        { name: "Git Version Control", category: "Tooling" },
+        { name: "App Store & Play Store publishing", category: "Deployment" },
+        { name: "Keychain & Mobile Security", category: "Security" }
+      ],
+      soft: [
+        "Device Interaction Empathy",
+        "Visual Attention to Detail",
+        "Performance Optimization Mindset",
+        "Asynchronous Thinking"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "Meta iOS Developer Professional Certificate (Coursera)", cost: "$39/mo", difficulty: "Beginner" },
+        { name: "Google Associate Android Developer Certification", cost: "$149", difficulty: "Intermediate" },
+        { name: "Apple Swift Developer Associate Credential", cost: "Free/Beta", difficulty: "Intermediate" }
+      ],
+      bootcamps: "Helpful if focusing heavily on app architecture patterns over just layout styles. Ensure they teach local caching, memory leak tracking, and deployment protocols.",
+      degreeRequired: "Not strictly required. A portfolio containing a live, downloadable app from the App Store or Google Play holds significantly higher weight than formal coursework during mobile review loops."
+    },
+    portfolio: {
+      title: "Offline-First Location-Based Travel Journal App",
+      description: "A fully offline-ready mobile application letting users capture location photos, write diary logs, pin geographic map nodes, and sync when online.",
+      techStack: ["SwiftUI / Swift", "CoreData", "MapKit", "CloudKit / Firebase", "URLSession"],
+      features: [
+        "Interactive Map view showcasing pins corresponding to user notes location",
+        "Camera utility to capture and compress photos saved directly to device storage",
+        "Offline synchronization syncing records to a CloudKit/Firebase database when internet recovers",
+        "Password lock and biometric verification using FaceID / TouchID keychain API",
+        "Elegant list dashboards featuring filters, search, and custom card swipe gestures"
+      ],
+      steps: [
+        "Design view layouts in SwiftUI, building clean mock views for map and input forms.",
+        "Set up CoreData persistence layers, mapping entity relationships for entries, locations, and images.",
+        "Integrate MapKit geolocation services, auto-fetching coordinate details.",
+        "Implement image compression utilities to optimize local database weight constraints.",
+        "Add Biometric Authentication layers via LocalAuthentication framework checks.",
+        "Integrate background sync listeners updating remote CloudKit containers."
+      ]
+    },
+    resume: {
+      keywords: ["Swift", "SwiftUI", "Kotlin", "Jetpack Compose", "React Native", "Flutter", "CoreData", "MapKit", "SQLite", "JSON", "RESTful APIs", "Firebase", "App Store Connect", "CocoaPods", "Gradle"],
+      actionVerbs: ["Developed", "Engineered", "Published", "Optimized", "Refactored", "Integrated", "Debugged", "Architected"],
+      metricsTemplate: "Optimized CoreData fetch request loops and image caching routines, decreasing overall battery consumption by 24% and reducing app launching latency by 1.2s."
+    },
+    quiz: [
+      {
+        question: "Which of the following is the modern recommended language for native Android app development?",
+        options: ["Java", "Swift", "Kotlin", "Dart"],
+        correctAnswerIndex: 2,
+        explanation: "Kotlin was declared the preferred programming language for Android developers by Google in 2019 due to its safety patterns, concise syntax, and interoperability."
+      },
+      {
+        question: "In SwiftUI, which property wrapper is used to manage dynamic state variables owned by the view itself?",
+        options: ["@ObservedObject", "@State", "@Binding", "@EnvironmentObject"],
+        correctAnswerIndex: 1,
+        explanation: "@State is used for lightweight, local state variables created and managed inside the specific View struct."
+      },
+      {
+        question: "What is the primary role of a 'Provisioning Profile' in iOS development?",
+        options: [
+          "To speed up UI rendering actions",
+          "To translate Swift code into objective-c binaries",
+          "To link developer certificates, app identifiers, and device IDs, authorizing the app to run on physical devices",
+          "To secure database encryption profiles"
+        ],
+        correctAnswerIndex: 2,
+        explanation: "Provisioning Profiles act as the digital link connecting Apple Developer Certificates, the App ID, and designated UDIDs (device lists) to allow testing on real iOS hardware."
+      },
+      {
+        question: "Which of the following describes cross-platform frameworks like React Native?",
+        options: [
+          "They compile directly into binary WebAssembly pages",
+          "They write a single JavaScript/TS codebase that maps to native platform view controllers at runtime",
+          "They run inside browser wrappers only",
+          "They replace the need for remote REST APIs"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "React Native uses a JS/TS codebase which communicates via a bridge or native layout engine to render actual native buttons, text, and components, ensuring native responsiveness."
+      },
+      {
+        question: "What does ANR stand for in Android system metrics?",
+        options: ["Access Network Registry", "App Not Responding", "Activity Node Routing", "Automatic Network Recovery"],
+        correctAnswerIndex: 1,
+        explanation: "ANR stands for 'Application Not Responding'. It occurs when the Android main UI thread blocks for too long (e.g. over 5 seconds), causing the system to prompt the user to force quit."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "Explain the difference between value types and reference types in Swift.",
+        type: "technical",
+        hint: "Structs are value types (passed by copy); Classes are reference types (passed by reference/pointer). Talk about memory allocation (stack vs heap).",
+        keywords: ["struct", "class", "value", "reference", "copy", "heap", "stack", "pointer"]
+      },
+      {
+        question: "What is the difference between Android's Activity and Fragment cycles?",
+        type: "technical",
+        hint: "An Activity represents a single, complete system screen window. A Fragment is a modular, reusable sub-section of a screen cycle embedded inside an Activity.",
+        keywords: ["activity", "fragment", "embedded", "reusable", "host", "sub-section", "screen"]
+      },
+      {
+        question: "Tell me about a time you optimized a mobile app's performance or resolved a memory leak.",
+        type: "behavioral",
+        hint: "Explain how you diagnosed the issue (e.g. Xcode Instruments, Profiler, leak traces), located retain cycles, replaced strong variables with weak/unowned, and verified battery/RAM outcomes.",
+        keywords: ["situation", "task", "action", "result", "instruments", "retain cycle", "weak", "leak", "profiler"]
+      },
+      {
+        question: "How do you handle offline sync conflict resolution in mobile data sync?",
+        type: "technical",
+        hint: "State standard patterns: last-write-wins, client-wins, server-wins, or prompting user selection. Highlight timestamp checks and merge pipelines.",
+        keywords: ["sync", "conflict", "timestamp", "last-write-wins", "merge", "client", "server"]
+      },
+      {
+        question: "How do you ensure app layouts display correctly across varying screen aspect ratios?",
+        type: "technical",
+        hint: "Discuss AutoLayout constraints (iOS) or ConstraintLayout (Android), responsive grid units, and declarative stacks scaling dynamically.",
+        keywords: ["autolayout", "constraints", "responsive", "constraintlayout", "flexbox", "scaling", "grid"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "iOS & Swift - The Complete iOS App Development Bootcamp (Udemy)", price: "$15-$25", duration: "59 hours" },
+        { title: "Android App Development Masterclass Kotlin (Udemy)", price: "$15-$30", duration: "42 hours" }
+      ],
+      youtube: [
+        { channel: "Sean Allen", desc: "Superb native Swift/iOS focus, covers Xcode tips, SwiftUI setups, and interview mock prep questions." },
+        { channel: "Philipp Lackner", desc: "Expert Jetpack Compose and Kotlin tutorials for modern native Android architecture patterns." }
+      ]
+    }
+  },
+
+  ai_researcher: {
+    title: "AI/ML Researcher & NLP Engineer",
+    shortDesc: "Conduct research in AI fields, design deep learning models, and engineer natural language solutions.",
+    marketOutlook: {
+      growth: "+45% Projected 10-Yr Growth",
+      demand: "Extremely High",
+      topIndustries: ["Artificial Intelligence Labs", "Autonomous Vehicle Firms", "Big Tech Research Teams", "Healthcare & Biotech Labs", "SaaS Automation"]
+    },
+    salary: {
+      entry: 92000,
+      mid: 140000,
+      senior: 210000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: Deep Mathematical AI Foundations",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Master calculus derivatives, multivariate gradients, and optimization rules",
+          "Learn probability models: Bayes theorem, distributions, expectations",
+          "Understand matrix algebra, eigenvalues, vectors, and decomposition rules"
+        ]
+      },
+      {
+        title: "Stage 2: Neural Networks & Deep Models",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Code forward and backward propagation loops from scratch in pure Python",
+          "Master PyTorch framework: tensors, autograd, and neural network layers",
+          "Understand CNNs for computer vision and RNN/LSTM sequences"
+        ]
+      },
+      {
+        title: "Stage 3: Transformers & NLP Pipelines",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Understand self-attention mechanisms and the original Transformer architecture",
+          "Train NLP pipelines: tokenization, text embeddings, and language modelling",
+          "Implement LLM fine-tuning strategies: LoRA, QLoRA, and PEFT concepts"
+        ]
+      },
+      {
+        title: "Stage 4: AI Deployments & Evaluation Tuning",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Evaluate model generations using BLEU, ROUGE, and LLM-as-a-judge frameworks",
+          "Quantize and compress models (AWQ, GPTQ) for local hardware deployments",
+          "Deploy custom inference APIs using vLLM or HuggingFace TGI tools"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "PyTorch / TensorFlow", category: "Deep Learning" },
+        { name: "Hugging Face Ecosystem", category: "NLP Core" },
+        { name: "Linear Algebra & Optimization", category: "Mathematics" },
+        { name: "LLM Fine-Tuning (LoRA / QLoRA)", category: "Large Models" },
+        { name: "Model Quantization & Inference (vLLM)", category: "Deployment" },
+        { name: "Vector Databases (Chroma / Pinecone)", category: "RAG Systems" },
+        { name: "Git Version Control", category: "Tooling" },
+        { name: "CUDA & GPU programming", category: "Hardware Acceleration" }
+      ],
+      soft: [
+        "Scientific Writing & Rigor",
+        "Curious Exploration",
+        "Ethical AI Awareness",
+        "Analytical Problem Breakdown"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "Deep Learning Specialization by Andrew Ng (Coursera)", cost: "$49/mo", difficulty: "Intermediate" },
+        { name: "Natural Language Processing Specialization", cost: "$49/mo", difficulty: "Advanced" },
+        { name: "AWS Certified Machine Learning - Specialty", cost: "$300", difficulty: "Advanced" }
+      ],
+      bootcamps: "Rarely recommended. AI research is heavily academic; bootcamps often lack the deep mathematical rigor (advanced calculus, matrix models) required to debug transformer loss curves.",
+      degreeRequired: "Highly requested. While some developers transition via open-source LLM work, over 75% of research engineers hold STEM Master's or Ph.D. degrees in Math, Statistics, or Computer Science."
+    },
+    portfolio: {
+      title: "Fine-Tuned Domain-Specific Assistant with RAG Pipeline",
+      description: "A customized small language model (e.g. Llama-3-8B) fine-tuned on specialized dataset files, paired with a semantic retrieval database for accurate vector responses.",
+      techStack: ["Python", "PyTorch", "HuggingFace Transformers", "QLoRA / PEFT", "ChromaDB", "FastAPI"],
+      features: [
+        "Model training dataset loader notebook featuring semantic tokenization audits",
+        "Fully executed training run logs demonstrating training loss stabilization graphs",
+        "Custom vector search retrieval class converting user queries to semantic matches",
+        "API service exposing inference routes backed by vLLM execution containers",
+        "Evaluation benchmark notebook matching output accuracy scores against base models"
+      ],
+      steps: [
+        "Collect and format niche text data records, cleaning format tags.",
+        "Perform PEFT/QLoRA parameter training configuration using transformers library.",
+        "Save and merge trained weight adapters with base target parameters.",
+        "Build indexing system parsing PDF archives into ChromaDB vector nodes.",
+        "Combine retriever query matching with model input templates (RAG prompt).",
+        "Deploy model inference endpoints under FastAPI, configuring inputs."
+      ]
+    },
+    resume: {
+      keywords: ["PyTorch", "NLP", "LLM", "Transformers", "Fine-Tuning", "LoRA", "Vector Databases", "Embeddings", "Hugging Face", "CUDA", "ROUGE Score", "Retrieval Augmented Generation (RAG)", "vLLM", "Python", "Linear Algebra"],
+      actionVerbs: ["Researched", "Fine-Tuned", "Engineered", "Optimized", "Formulated", "Implemented", "Evaluated", "Accelerated"],
+      metricsTemplate: "Fine-tuned an open-source 8B LLM using QLoRA configurations, improving domain accuracy scores by 34% while reducing inference hosting costs by 62% via model quantization."
+    },
+    quiz: [
+      {
+        question: "What is the primary function of Self-Attention inside Transformer model layers?",
+        options: [
+          "To clean dataset text columns automatically",
+          "To compute dynamic visual weights for image boundaries",
+          "To measure the contextual dependency of each word in a sequence relative to all other words in the same sequence",
+          "To speed up database index lookups"
+        ],
+        correctAnswerIndex: 2,
+        explanation: "Self-attention computes a mathematical weight matrix mapping how words relate to other words in the text, capturing rich context regardless of distance."
+      },
+      {
+        question: "What does LoRA (Low-Rank Adaptation) accomplish during large language model training?",
+        options: [
+          "It compresses the model text into smaller character sets",
+          "It updates only a tiny subset of model parameters by training low-rank decomposed adapter matrices, saving significant GPU memory",
+          "It acts as a firewall guarding AI weights",
+          "It speeds up internet connection bandwidth to training rigs"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "LoRA inserts small, trainable parameter blocks (decomposed rank matrices) into model layers, freezing base weights, which dramatically cuts memory consumption."
+      },
+      {
+        question: "When training neural networks, what does Gradient Vanishing refer to?",
+        options: [
+          "The loss calculation function returning zero values",
+          "Gradients shrinking exponentially during backpropagation, causing early layer parameters to stop learning",
+          "The training system deleting files randomly",
+          "The memory storage limit of GPU cards being breached"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "Vanishing gradients occur when successive chain rule multiplications yield microscopic updates, leaving early layer weights unaltered during parameter optimization loops."
+      },
+      {
+        question: "Which evaluation metric is standard for summarizing language translation model output relative to target translations?",
+        options: ["F1-Score", "BLEU Score", "Confusion Matrix", "ROC-AUC"],
+        correctAnswerIndex: 1,
+        explanation: "BLEU (Bilingual Evaluation Understudy) measures n-gram overlaps between model translations and target human references, outputting scores from 0 to 1."
+      },
+      {
+        question: "What is the purpose of Vector Embeddings in machine learning?",
+        options: [
+          "To secure code directories",
+          "Representing raw text, images, or audio as numerical coordinate arrays that capture semantic meaning",
+          "Mapping database tables",
+          "Formatting HTML structures"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "Embeddings translate high-dimensional categorical data (like text) into dense numerical vectors in a continuous vector space where similar concepts cluster near one another."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "Explain how the self-attention mechanism works mathematically.",
+        type: "technical",
+        hint: "Discuss Query (Q), Key (K), and Value (V) matrices. Mention calculating scaled dot-product attention: Softmax(QK^T / sqrt(d_k))V.",
+        keywords: ["query", "key", "value", "softmax", "scaled dot-product", "dimension", "similarity"]
+      },
+      {
+        question: "What is Retrieval-Augmented Generation (RAG) and how does it prevent model hallucination?",
+        type: "technical",
+        hint: "RAG extracts factual context matching the user query from external databases, feeding it as prompt guidelines to the LLM, grounding generations.",
+        keywords: ["grounding", "context", "hallucination", "database", "query", "vector", "retrieve"]
+      },
+      {
+        question: "Tell me about a time your AI model failed to generalize to testing datasets. How did you diagnose and resolve the issue?",
+        type: "behavioral",
+        hint: "Explain checking loss curves, identifying overfitting, collecting diverse data, applying regularization, or adjusting learning rates.",
+        keywords: ["situation", "task", "action", "result", "generalize", "overfitting", "loss curve", "regularization", "learning rate"]
+      },
+      {
+        question: "Describe the differences between fine-tuning and in-context learning (few-shot prompting).",
+        type: "technical",
+        hint: "Fine-tuning modifies model parameters/weights permanently on new datasets. In-context learning passes examples inside the prompt window without weight modifications.",
+        keywords: ["weights", "parameters", "prompt", "examples", "context window", "training"]
+      },
+      {
+        question: "What are your strategies for evaluating LLM outputs when targeting open-ended tasks?",
+        type: "technical",
+        hint: "Discuss LLM-as-a-judge patterns, human evaluation rubrics, automated checks (ROUGE/BLEU), and domain safety guards.",
+        keywords: ["eval", "judge", "rouge", "bleu", "human eval", "rubric", "safety"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "Deep Learning Specialization (Coursera - Andrew Ng)", price: "$49/mo", duration: "approx. 3 months" },
+        { title: "NLP Specialization (HuggingFace/Coursera)", price: "$49/mo", duration: "approx. 2 months" }
+      ],
+      youtube: [
+        { channel: "Andrej Karpathy", desc: "Arguably the finest deep-dive tutorials explaining transformer neural networks from scratch, coding GPT layers block-by-block." },
+        { channel: "Yannic Kilcher", desc: "Reviews modern AI research publications and explains paper structures, architectures, and breakthroughs." }
+      ]
+    }
+  },
+
+  data_engineer: {
+    title: "Data Engineer & Database Architect",
+    shortDesc: "Design and build data pipelines, data warehouses, and scalable database schemas for big data operations.",
+    marketOutlook: {
+      growth: "+28% Projected 10-Yr Growth",
+      demand: "Very High",
+      topIndustries: ["Big Data Technology", "Financial Institutions", "Healthcare Systems", "Streaming & Entertainment", "E-commerce Networks"]
+    },
+    salary: {
+      entry: 82000,
+      mid: 118000,
+      senior: 170000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: SQL Mastery & Data Modeling",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Master SQL: window functions, CTEs, aggregation, complex joins, indexing",
+          "Learn database schemas: Star, Snowflake, normalized vs denormalized structures",
+          "Understand ACID transaction properties and isolation levels"
+        ]
+      },
+      {
+        title: "Stage 2: Python Scripting & ETL Pipelines",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Use Python libraries (Pandas, PySpark) to clean, merge, and transform raw files",
+          "Learn API data harvesting and automated cron configurations",
+          "Implement pipeline orchestrators like Apache Airflow or Prefect to schedule DAG tasks"
+        ]
+      },
+      {
+        title: "Stage 3: Data Warehouses & Distributed Computing",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Understand cloud data warehouses: Snowflake, Google BigQuery, or Amazon Redshift",
+          "Learn distributed compute frameworks: Apache Spark or Hadoop",
+          "Build dbt (data build tool) projects transforming raw tables into cleaned analyst views"
+        ]
+      },
+      {
+        title: "Stage 4: Streaming Architecture & Real-Time Data",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Understand real-time stream data queues using Apache Kafka or AWS Kinesis",
+          "Configure data lake structures (Delta Lake, Apache Iceberg) on cloud storage",
+          "Apply pipeline security, data validation checks, and telemetry alerts"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "SQL (Window Functions / CTEs)", category: "Databases" },
+        { name: "Python Programming (Pandas / PySpark)", category: "Programming" },
+        { name: "Apache Airflow (DAG Pipelines)", category: "Orchestration" },
+        { name: "Snowflake / Google BigQuery / AWS Redshift", category: "Data Warehousing" },
+        { name: "Apache Spark (Distributed Compute)", category: "Big Data" },
+        { name: "dbt (Data Build Tool)", category: "Transformation" },
+        { name: "Apache Kafka / AWS Kinesis", category: "Streaming" },
+        { name: "Git Version Control", category: "Tooling" }
+      ],
+      soft: [
+        "Data Quality Integrity",
+        "Systems Architecture Vision",
+        "Cross-team Bridging (Analysts + Devs)",
+        "Structured Troubleshooting"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "Google Cloud Professional Data Engineer", cost: "$200", difficulty: "Advanced" },
+        { name: "SnowPro Core Certification (Snowflake)", cost: "$175", difficulty: "Intermediate" },
+        { name: "AWS Certified Data Engineer - Associate", cost: "$150", difficulty: "Intermediate" }
+      ],
+      bootcamps: "Highly recommended if they focus on command-line pipeline scripting, warehouse design, and cloud setups over basic Python syntax tutorials.",
+      degreeRequired: "Not strictly required. A quantitative degree is helpful, but 70%+ of data engineering hires are judged on hands-on system designs demonstrating Spark operations or clean dbt models."
+    },
+    portfolio: {
+      title: "Automated Orchestrated E-commerce Analytics Warehouse",
+      description: "A complete data engineering workflow scraping source transactions, cleaning records via Spark, warehousing in Snowflake, and orchestrating via Apache Airflow.",
+      techStack: ["Python", "Apache Airflow", "Apache Spark", "Snowflake", "dbt", "Docker", "S3"],
+      features: [
+        "Airflow DAG mapping out the dependency tasks with failure notification triggers",
+        "Distributed Spark cleanup script normalizing user demographic files",
+        "Snowflake data warehouse setup detailing staging schemas and production models",
+        "dbt transformations transforming user profiles into aggregates (daily LTV graphs)",
+        "Fully written data quality suite executing column constraints audits (Great Expectations)"
+      ],
+      steps: [
+        "Launch local Airflow and Spark instances containerized in Docker Compose configurations.",
+        "Develop raw data intake script pushing log batches to AWS S3 buckets.",
+        "Configure Spark transformation job joining transaction tables with user logs.",
+        "Set up Snowflake staging credentials, creating pipelines loading S3 records.",
+        "Write dbt transformations tracking target aggregations; test queries.",
+        "Wrap the sequence steps inside an Airflow DAG script, ensuring error isolation."
+      ]
+    },
+    resume: {
+      keywords: ["SQL", "Python", "ETL", "Apache Airflow", "Snowflake", "Apache Spark", "dbt", "Kafka", "Data Modeling", "Data Warehousing", "Big Data", "AWS Redshift", "BigQuery", "Data Pipelines", "Docker"],
+      actionVerbs: ["Orchestrated", "Architected", "Engineered", "Optimized", "Aggregated", "Ingested", "Normalized", "Streamlined"],
+      metricsTemplate: "Architected an automated ETL pipeline loading transactions using Airflow and Snowflake, decreasing overall query processing latency by 42% and trimming compute costs by $15k/year."
+    },
+    quiz: [
+      {
+        question: "What distinguishes normalized databases (OLTP) from denormalized databases (OLAP)?",
+        options: [
+          "OLTP uses no database tables; OLAP uses flat txt files",
+          "OLTP reduces redundancy and ensures transaction integrity (ACID); OLAP duplicates data to optimize query performance for massive analytical operations",
+          "OLTP is faster to access over wireless networks",
+          "OLAP is deprecated by current data engineering standards"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "OLTP focuses on write operations, structuring tables to prevent anomalies. OLAP denormalizes data into star/snowflake structures, trading duplication for lightning-fast query reads."
+      },
+      {
+        question: "In Apache Airflow, what does a DAG stand for?",
+        options: ["Data Aggregation Grid", "Directed Acyclic Graph", "Database Array Grouping", "Digital Archive Gateway"],
+        correctAnswerIndex: 1,
+        explanation: "DAG stands for Directed Acyclic Graph. It is a collection of tasks organized in a clear directional path with no circular loops, defining operational workflows."
+      },
+      {
+        question: "Which file format is standard for columnar big data storage, offering excellent compression and split-processing benefits?",
+        options: ["JSON", "CSV", "Parquet", "XML"],
+        correctAnswerIndex: 2,
+        explanation: "Apache Parquet is a columnar file storage format optimized for analytical queries, compressing values heavily and allowing engines to load only specific columns."
+      },
+      {
+        question: "What does the 'T' represent in modern ELT cloud warehouse architectures?",
+        options: ["Transfer", "Translate", "Transform", "Telemetry"],
+        correctAnswerIndex: 2,
+        explanation: "ELT stands for Extract, Load, Transform. Data is loaded raw into the cloud database, and the Transformation occurs inside the target warehouse engine (e.g. via dbt)."
+      },
+      {
+        question: "In SQL, what is the key difference between WHERE and HAVING statements?",
+        options: [
+          "There is no difference, they are query synonyms",
+          "WHERE filters individual rows before grouping; HAVING filters aggregated groups after GROUP BY execution",
+          "HAVING executes queries faster",
+          "WHERE is only used on numeric values"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "WHERE filters rows before groupings are processed. HAVING specifies filter criteria on columns derived from aggregate mathematical computations (e.g. SUM or AVG)."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "Explain the difference between a Star Schema and a Snowflake Schema.",
+        type: "technical",
+        hint: "Star Schema uses denormalized dimensions directly connected to a central fact table. Snowflake normalizes dimensions into sub-tables, reducing space but increasing join complexity.",
+        keywords: ["star", "snowflake", "normalize", "denormalize", "dimension", "fact table", "joins"]
+      },
+      {
+        question: "What is data lineage and why is it important in enterprise warehouses?",
+        type: "technical",
+        hint: "Lineage tracks the movement, origins, transformations, and destinations of datasets. Essential for debugging errors and auditing data quality origins.",
+        keywords: ["lineage", "origin", "destination", "audit", "trace", "transformation", "quality"]
+      },
+      {
+        question: "Tell me about a time you optimized a slow SQL query. What modifications did you implement?",
+        type: "behavioral",
+        hint: "Discuss parsing the execution plan, identifying table scans vs index seeks, adding indices, replacing correlated subqueries with CTEs/joins, or partitioning.",
+        keywords: ["situation", "task", "action", "result", "execution plan", "index", "cte", "scan", "join"]
+      },
+      {
+        question: "How do you handle pipeline scaling when dealing with out-of-order data streams?",
+        type: "technical",
+        hint: "Discuss event time vs processing time, partitioning logs, dead-letter queues, and streaming watermarks.",
+        keywords: ["watermark", "event time", "processing time", "dead-letter queue", "stream", "out-of-order"]
+      },
+      {
+        question: "What are ACID properties in databases, and does a distributed system like Apache Spark enforce them?",
+        type: "technical",
+        hint: "ACID represents Atomicity, Consistency, Isolation, Durability. Traditional relational systems enforce them strictly; Spark does not natively enforce ACID unless utilizing frameworks like Delta Lake.",
+        keywords: ["acid", "atomicity", "consistency", "isolation", "durability", "delta lake", "spark"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "Data Engineering Zoomcamp (DataTalks.Club)", price: "Free/Donation", duration: "approx. 10 weeks" },
+        { title: "Snowflake Masterclass - Build Data Pipelines (Udemy)", price: "$15-$25", duration: "16 hours" }
+      ],
+      youtube: [
+        { channel: "Data Engineering Academy", desc: "Superb structured guides covering dbt, SQL profiling, Airflow scripting, and warehouse optimization." },
+        { channel: "Seattle Data Guy (Ben Rogojan)", desc: "Practical, career-focused advice breaking down data engineering software stacks, interviews, and portfolio projects." }
+      ]
+    }
+  },
+
+  systems_admin: {
+    title: "Systems & Network Administrator",
+    shortDesc: "Manage operating systems, configure local/cloud networks, ensure hardware uptime, and enforce security policies.",
+    marketOutlook: {
+      growth: "+14% Projected 10-Yr Growth",
+      demand: "High",
+      topIndustries: ["Enterprise Corporations", "Universities & Schools", "Government Agencies", "IT Consultancies", "Data Center Facilities"]
+    },
+    salary: {
+      entry: 65000,
+      mid: 88000,
+      senior: 125000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: OS Core & Command Line Essentials",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Master Linux administration: permissions, file structures, users, systemd services",
+          "Learn Windows Server administration and Active Directory (AD) hierarchy basics",
+          "Automate repetitive OS tasks using Bash or PowerShell scripting"
+        ]
+      },
+      {
+        title: "Stage 2: Enterprise Networking Core",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Understand TCP/IP subnetting, routing, VLAN structures, and firewall configurations",
+          "Configure standard network services: DHCP, DNS, NAT, SSH, VPN connections",
+          "Analyze network anomalies and traffic packets using Wireshark CLI"
+        ]
+      },
+      {
+        title: "Stage 3: Active Directory & Identity Management",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Configure Active Directory Domain Services (AD DS) and Group Policy Objects (GPOs)",
+          "Manage Single Sign-On (SSO) systems and multi-factor authorization (MFA) parameters",
+          "Implement access structures (RBAC) and network security configurations"
+        ]
+      },
+      {
+        title: "Stage 4: Virtualization, Backup & Telemetry",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Understand hypervisors: VMware ESXi, Hyper-V, or Proxmox setups",
+          "Configure automated system backup models and disaster recovery pipelines",
+          "Deploy monitoring telemetry (Nagios, Zabbix, or Prometheus) to track server status"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "Linux / Windows Server Administration", category: "OS Core" },
+        { name: "Active Directory & Group Policies (GPO)", category: "Identity Management" },
+        { name: "PowerShell / Bash Automation", category: "Scripting" },
+        { name: "TCP/IP Subnetting & VLAN configuration", category: "Networking" },
+        { name: "DNS / DHCP / VPN configuration", category: "Services" },
+        { name: "VMware / Hyper-V Virtualization", category: "Virtualization" },
+        { name: "Zabbix / Prometheus monitoring", category: "Telemetry" },
+        { name: "System Backup & Disaster Recovery", category: "Infrastructure" }
+      ],
+      soft: [
+        "Uptime Responsibility",
+        "Clear Documentation Habits",
+        "Calm Crisis Resolution",
+        "Methodical Troubleshooting"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "CompTIA Network+", cost: "$358", difficulty: "Beginner" },
+        { name: "Cisco Certified Network Associate (CCNA)", cost: "$300", difficulty: "Beginner-Intermediate" },
+        { name: "Microsoft Certified: Windows Server Hybrid Administrator Associate", cost: "$165", difficulty: "Intermediate" }
+      ],
+      bootcamps: "Rarely needed. Systems administration relies heavily on hands-on config experience and self-study certs like CCNA which are cheaper and universally respected.",
+      degreeRequired: "Not strictly required. An Associate degree or Bachelor's in IT is common, but active industry certifications (CCNA, Network+) paired with a physical home lab portfolio are highly effective."
+    },
+    portfolio: {
+      title: "Secure Active Directory Domain & Enterprise VPN Home Lab",
+      description: "A configured network virtual environment displaying Active Directory Domain Service controls, GPO security policies, DHCP server configuration, and remote VPN client access.",
+      techStack: ["Windows Server", "pfSense (Virtual Firewall)", "Ubuntu Server (Linux)", "PowerShell", "Proxmox / VirtualBox"],
+      features: [
+        "Architecture layout showing isolated subnet segments (Management, LAN, DMZ)",
+        "GPO script enforcing password complexities and automatic desktop locks across test computers",
+        "PowerShell script automating onboarding for 100 dummy employees into custom OUs",
+        "Configured pfSense routing rules preventing LAN nodes from accessing raw database subnets",
+        "Active monitoring panel sending emails if host CPU limits exceed 90%"
+      ],
+      steps: [
+        "Install Proxmox or VirtualBox on local hardware VM hosts.",
+        "Provision a pfSense VM routing traffic between virtual LAN and local WAN lines.",
+        "Deploy a Windows Server VM, elevating to Domain Controller (Active Directory).",
+        "Deploy secondary Linux nodes, joining domain controls; write GPO guidelines.",
+        "Build OpenVPN config inside pfSense, testing client remote connection handshakes.",
+        "Install Zabbix alerts agents on nodes, verifying monitoring dashboard triggers."
+      ]
+    },
+    resume: {
+      keywords: ["Windows Server", "Active Directory", "Linux CLI", "PowerShell", "TCP/IP", "DNS", "DHCP", "VPN", "VLAN", "Group Policy (GPO)", "pfSense", "Virtualization", "VMware", "System Administration", "CCNA"],
+      actionVerbs: ["Configured", "Administered", "Automated", "Secured", "Resolved", "Provisioned", "Upgraded", "Monitored"],
+      metricsTemplate: "Configured Windows Server Active Directory structures and PowerShell onboarding loops, reducing client workstation provisioning times by 68% and automating weekly security GPOs."
+    },
+    quiz: [
+      {
+        question: "Which system service dynamically allocates network IP addresses, subnet masks, and DNS details to host computers?",
+        options: ["DNS", "DHCP", "SSH", "NAT"],
+        correctAnswerIndex: 1,
+        explanation: "DHCP (Dynamic Host Configuration Protocol) automatically distributes IP parameters to network nodes, preventing manual configuration conflicts."
+      },
+      {
+        question: "What is the primary function of Group Policy Objects (GPOs) in Active Directory environments?",
+        options: [
+          "To route network packets between routers",
+          "To centrally manage and enforce OS settings, security parameters, and user configurations across domain-joined systems",
+          "To compile programming files",
+          "To speed up local hard drive writes"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "GPOs allow network administrators to enforce security profiles (like desktop lock timers, password complexity, and USB blocks) across thousands of corporate computers centrally."
+      },
+      {
+        question: "If a system administrator wants to check raw connectivity handshakes and identify the hops/routers to a target server, which command is most appropriate?",
+        options: ["ipconfig", "nslookup", "traceroute (Linux) / tracert (Windows)", "ping"],
+        correctAnswerIndex: 2,
+        explanation: "Traceroute outputs the exact sequence of router IP hops a packet traverses to reach its destination, detailing latency delays at each junction."
+      },
+      {
+        question: "In Linux system administration, which command changes directory ownership profiles?",
+        options: ["chmod", "chown", "mkdir", "sudo"],
+        correctAnswerIndex: 1,
+        explanation: "chown is used to change user and group ownership of files and directories. chmod is used to modify read/write/execute permissions metrics."
+      },
+      {
+        question: "What is a Hypervisor?",
+        options: [
+          "A high-speed router port configuration",
+          "Virtualization software that runs and coordinates multiple Virtual Machines on a single physical host computer",
+          "A tool to check memory storage temperatures",
+          "A database clustering strategy"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "A hypervisor (like VMware ESXi or Hyper-V) sits between hardware and OS layers, slicing resources to host independent guest VMs."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "Explain what DNS is and the difference between an A record, a CNAME record, and an MX record.",
+        type: "technical",
+        hint: "DNS translates domain names to IPs. A record maps domain to IPv4 address. CNAME maps domain to alias domain. MX record maps domain to mail exchange servers.",
+        keywords: ["dns", "translate", "ipv4", "alias", "cname", "a record", "mx record", "mail"]
+      },
+      {
+        question: "How do you calculate subnets? If you have an IP range of 192.168.1.0/26, how many hosts can you allocate?",
+        type: "technical",
+        hint: "A /26 subnet leaves 6 bits for hosts (32 - 26 = 6). 2^6 = 64. Subtract 2 (network and broadcast addresses) to get 62 usable host addresses.",
+        keywords: ["subnet", "hosts", "network address", "broadcast", "62", "power of 2", "bits"]
+      },
+      {
+        question: "Tell me about a time you had to handle a critical server outage during non-business hours. How did you react?",
+        type: "behavioral",
+        hint: "Mention diagnostic steps, checking logs, restoring backups or adjusting services, coordinating communications with teams, and implementing updates to prevent recurrences.",
+        keywords: ["situation", "task", "action", "result", "outage", "diagnostic", "backup", "logs", "communication"]
+      },
+      {
+        question: "What is Active Directory, and what is the difference between a Forest, a Domain, and an OU (Organizational Unit)?",
+        type: "technical",
+        hint: "AD is Microsoft's directory network system. Forest is the top security boundary containing domain trees. Domain is a logical group of accounts. OU is a sub-folder container within a domain used to organize nodes.",
+        keywords: ["forest", "domain", "organizational unit", "ou", "active directory", "boundary", "hierarchy"]
+      },
+      {
+        question: "Explain the differences between RAID 0, RAID 1, RAID 5, and RAID 10 configurations.",
+        type: "technical",
+        hint: "RAID 0 is striping (fast, no safety). RAID 1 is mirroring (safe, half space). RAID 5 uses parity blocks across 3+ disks. RAID 10 is striped mirrors (needs 4+ disks).",
+        keywords: ["raid 0", "raid 1", "raid 5", "raid 10", "striping", "mirroring", "parity", "disks"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "Cisco CCNA 200-301 Complete Course (Jeremy's IT Lab - Udemy)", price: "$15-$25", duration: "approx. 40 hours" },
+        { title: "Windows Server Hybrid Administrator Path (Microsoft Learn)", price: "Free", duration: "Self-paced study modules" }
+      ],
+      youtube: [
+        { channel: "Jeremy's IT Lab", desc: "Arguably the finest free resource for CCNA network builders, complete with packet tracer files." },
+        { channel: "NetworkChuck", desc: "High-energy tutorials covering commands, DNS architectures, virtualization systems, and port setups." }
+      ]
+    }
+  },
+
+  qa_automation: {
+    title: "QA Automation & Testing Engineer",
+    shortDesc: "Write automated scripts to test web/mobile applications, perform integration checks, and audit code quality.",
+    marketOutlook: {
+      growth: "+17% Projected 10-Yr Growth",
+      demand: "High",
+      topIndustries: ["SaaS Enterprises", "Financial Software", "Healthcare Platforms", "Mobile Gaming Networks", "E-commerce Hubs"]
+    },
+    salary: {
+      entry: 70000,
+      mid: 96000,
+      senior: 140000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: Testing Fundamentals & Manual Quality Checks",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Understand software testing lifecycle (STLC), bug reporting, and severity levels",
+          "Write descriptive, high-quality test cases and trace requirements matrices",
+          "Perform manual web audits checking Chrome DevTools console networks"
+        ]
+      },
+      {
+        title: "Stage 2: Scripting & Web UI Testing Automation",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Master Javascript, Python, or Java essentials needed for test execution",
+          "Learn selector engines (CSS selectors, XPaths) to isolate web buttons",
+          "Build UI automated test scripts using Selenium WebDriver, Playwright, or Cypress"
+        ]
+      },
+      {
+        title: "Stage 3: API testing & Automation Pipelines",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Test REST API routes manually using Postman, verifying payload return parameters",
+          "Automate API endpoint tests using Javascript libraries (Axios/Supertest) or Python requests",
+          "Implement Page Object Model (POM) architectural design patterns to keep scripts clean"
+        ]
+      },
+      {
+        title: "Stage 4: Pipeline integration & Performance Auditing",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Integrate automated test runs into CI/CD scripts (GitHub Actions, GitLab CI)",
+          "Perform API and database load testing using JMeter or Locust scripts",
+          "Understand cross-browser testing networks and generate validation report logs"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "Playwright / Cypress / Selenium", category: "UI Automation" },
+        { name: "Javascript / Python Programming", category: "Programming" },
+        { name: "Postman & REST API testing", category: "API Testing" },
+        { name: "Page Object Model (POM) patterns", category: "Architecture" },
+        { name: "CSS Selectors & XPath selectors", category: "Web Traversal" },
+        { name: "Locust / JMeter performance testing", category: "Performance" },
+        { name: "CI/CD automated testing triggers", category: "Pipelines" },
+        { name: "Git Version Control", category: "Tooling" }
+      ],
+      soft: [
+        "Attention to Edge Cases",
+        "Destructive Testing Mindset",
+        "Clear Bug Reporting Documentation",
+        "Technical Empathy"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "ISTQB Certified Tester Foundation Level (CTFL)", cost: "$250", difficulty: "Beginner" },
+        { name: "ISTQB Test Automation Engineer (Advanced)", cost: "$250", difficulty: "Advanced" },
+        { name: "freeCodeCamp Javascript Algorithms & Data Structures", cost: "Free", difficulty: "Beginner" }
+      ],
+      bootcamps: "Recommended if focusing heavily on writing test runner libraries, database testing, and Jenkins/GitHub pipeline integrations over just manual click testing.",
+      degreeRequired: "Not strictly required. 60%+ QA Automation professionals successfully enter the field via self-taught scripting, ISTQB certifications, and public GitHub test repositories."
+    },
+    portfolio: {
+      title: "Playwright End-to-End Testing Suite & API Testing Suite",
+      description: "An automated UI and API test library validating user registration, database login validation, and e-commerce shopping workflows, running on GitHub Actions commit loops.",
+      techStack: ["Playwright", "Javascript", "Node.js", "Supertest", "GitHub Actions", "Allure Reports"],
+      features: [
+        "Page Object Model (POM) library abstraction classes mapping login and cart components",
+        "Automated mock database setup script cleaning records before test cycles",
+        "Parallel test configuration file execution checking layouts on Chrome, Firefox, and Safari views",
+        "API automated test pipeline validating payloads, response codes, and schemas",
+        "Configured GitHub Actions workflow file that runs tests and publishes HTML results dashboards"
+      ],
+      steps: [
+        "Initialize node.js test directory, installing Playwright runner modules.",
+        "Build page abstractions for UI target views, defining locators.",
+        "Write assertions matching correct credentials, wrong credentials, and checkout flows.",
+        "Implement parallel API testing scripts using Playwright's built-in request context.",
+        "Set up GitHub Actions script running tests on every repository branch commit.",
+        "Integrate report generation dashboards sending status logs to summary tables."
+      ]
+    },
+    resume: {
+      keywords: ["Playwright", "Cypress", "Selenium", "Postman", "API Testing", "Page Object Model (POM)", "JavaScript", "Python", "CI/CD", "GitHub Actions", "Manual Testing", "Test Automation", "JMeter", "XPath", "ISTQB"],
+      actionVerbs: ["Automated", "Tested", "Validated", "Identified", "Scripted", "Integrated", "Debugged", "Documented"],
+      metricsTemplate: "Architected a Playwright automated UI test suite with Page Object Model patterns, decreasing overall manual regression testing loops by 85% and identifying 42 core bugs before production releases."
+    },
+    quiz: [
+      {
+        question: "What is the primary benefit of utilizing the Page Object Model (POM) pattern in test automation libraries?",
+        options: [
+          "It accelerates internet browser loading performance",
+          "It encapsulates page elements and selector tags, reducing script duplication and making updates simpler to maintain",
+          "It replaces the need to run HTML code",
+          "It converts Java tests to Python scripts"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "POM isolates page selector strings and behaviors in classes. When visual layouts change, only the POM class file needs edits, rather than dozens of test files."
+      },
+      {
+        question: "Which term refers to validating that recently updated code did not introduce new bugs or break existing functional sections?",
+        options: ["Smoke Testing", "Sanity Testing", "Regression Testing", "Unit Testing"],
+        correctAnswerIndex: 2,
+        explanation: "Regression testing validates that system updates, bug fixes, or enhancements have not negatively impacted established application features."
+      },
+      {
+        question: "In web selectors, which string matches buttons having an ID property value set to 'submit-checkout'?",
+        options: [".submit-checkout", "button[id=submit-checkout]", "#submit-checkout", "both options 2 and 3"],
+        correctAnswerIndex: 3,
+        explanation: "In CSS selector engines, the '#' prefix indicates IDs (Option 3). Option 2 is also a syntactically valid CSS selector locating buttons with that exact ID attribute."
+      },
+      {
+        question: "What is the difference between Severity and Priority when documenting application bugs?",
+        options: [
+          "There is no difference, they are terms for the same metric",
+          "Severity measures the technical impact of the bug on application functions; Priority designates the operational timeline for fixing it",
+          "Priority is decided by developers; Severity is decided by sales leads",
+          "Severity is only used for database crash bugs"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "Severity maps how broken the system is (e.g., app crashes = High Severity). Priority is the business urgency of the fix (e.g., misspelling on logo = High Priority, Low Severity)."
+      },
+      {
+        question: "What does the 'Smoke Test' validate in release cycles?",
+        options: [
+          "Whether server fans are overheating",
+          "That the basic, most critical paths of the build (e.g. app boots, users can login) function successfully before executing deep tests",
+          "How the system responds to massive database spikes",
+          "The security integrity of API keys"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "Smoke tests are rapid checks verifying core foundations are sound, confirming the build is stable enough to merit launching heavy automated suites."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "What is the difference between implicit wait, explicit wait, and fluent wait in Selenium/Playwright?",
+        type: "technical",
+        hint: "Implicit waits set global timeouts. Explicit waits target specific conditions (element visible). Fluent waits define polling frequencies to look for components.",
+        keywords: ["implicit", "explicit", "fluent", "timeout", "polling", "condition", "visible", "global"]
+      },
+      {
+        question: "How do you automate API testing, and what checks should you run on return payloads?",
+        type: "technical",
+        hint: "Test status codes (e.g. 200 OK), payload schemas (field types), data boundaries, and latency response times using tools like Postman or Supertest.",
+        keywords: ["postman", "supertest", "status code", "schema", "headers", "latency", "response body", "assert"]
+      },
+      {
+        question: "Tell me about a time you had a dispute with a developer regarding a bug you reported. How did you resolve it?",
+        type: "behavioral",
+        hint: "Focus on objective logs. Discuss providing step-by-step reproduction guidelines, console error screenshots, isolating requirements in specs, and alignment on quality.",
+        keywords: ["situation", "task", "action", "result", "dispute", "reproduce", "objective", "documentation", "console log"]
+      },
+      {
+        question: "Explain what flaky tests are, and what strategies you implement to eliminate them.",
+        type: "technical",
+        hint: "Flaky tests pass or fail unpredictably. Causes include dynamic page load latency or hardcoded sleeps. Resolve using dynamic element selectors and auto-waits.",
+        keywords: ["flaky", "sleeps", "latency", "auto-wait", "dynamic", "locator", "race condition"]
+      },
+      {
+        question: "What is the difference between black-box testing, white-box testing, and grey-box testing?",
+        type: "technical",
+        hint: "Black-box checks functions without internal code access. White-box audits code architecture and logic direct. Grey-box combines both (checks behaviors knowing base codes).",
+        keywords: ["black-box", "white-box", "grey-box", "internal", "code access", "behavior", "logic"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "Automated Testing with Playwright (Udemy)", price: "$15-$25", duration: "18 hours" },
+        { title: "ISTQB Foundation Level Training (Udemy)", price: "$15-$30", duration: "12 hours" }
+      ],
+      youtube: [
+        { channel: "Testing Peer", desc: "Superb coverage of automation tools, selector engines, CI test integrations, and STLC best practices." },
+        { channel: "ExecuteAutomation", desc: "Detailed, developer-grade tutorials covering Playwright setups, Docker integration, and test architectures." }
+      ]
+    }
+  },
+
+  scrum_master: {
+    title: "Scrum Master & Agile Project Manager",
+    shortDesc: "Facilitate agile ceremonies, remove operational blockers, coach squads, and drive continuous delivery milestones.",
+    marketOutlook: {
+      growth: "+15% Projected 10-Yr Growth",
+      demand: "High",
+      topIndustries: ["Software Companies", "Fintech Providers", "Corporate IT Departments", "Telehealth Networks", "Government Systems"]
+    },
+    salary: {
+      entry: 78000,
+      mid: 108000,
+      senior: 150000
+    },
+    roadmap: [
+      {
+        title: "Stage 1: Scrum Foundations & Ceremonies",
+        duration: "Weeks 1 - 6",
+        milestones: [
+          "Understand the core values, roles, and pillars of the Scrum Guide",
+          "Learn facilitation models for Sprint Planning, Standups, Retros, and Reviews",
+          "Master mapping agile task boards on tools like Jira or Azure DevOps"
+        ]
+      },
+      {
+        title: "Stage 2: Metrics & Delivery Benchmarks",
+        duration: "Weeks 7 - 12",
+        milestones: [
+          "Analyze team capacity metrics: Velocity, Burndown/Burnup charts, and Cumulative Flow",
+          "Implement story estimation methodologies: Planning Poker, T-shirt sizing, Fibonacci metrics",
+          "Identify process bottlenecks, waste factors, and cycle delays"
+        ]
+      },
+      {
+        title: "Stage 3: Coaching, Conflict & Impediment Removal",
+        duration: "Weeks 13 - 18",
+        milestones: [
+          "Practice non-directive coaching strategies to cultivate self-organizing engineering squads",
+          "Facilitate conflict resolution models, negotiating department priorities",
+          "Track and clear complex cross-team dependencies, shielding developers from distractions"
+        ]
+      },
+      {
+        title: "Stage 4: Scaling Agile & Product Collaboration",
+        duration: "Weeks 19 - 24",
+        milestones: [
+          "Study scaled agile frameworks: SAFe, LeSS, or Scrum at Scale basics",
+          "Collaborate with Product Owners to optimize and refine backlogs and user stories",
+          "Develop visual metric presentation dashboards for executive steering committees"
+        ]
+      }
+    ],
+    skills: {
+      technical: [
+        { name: "Scrum Guide framework expertise", category: "Core Framework" },
+        { name: "Jira / Confluence administration", category: "Project Tooling" },
+        { name: "Agile Metrics (Velocity / Burndown)", category: "Metrics" },
+        { name: "Kanban / WIP limits configuration", category: "Methodology" },
+        { name: "Prioritization & Backlog Refinement", category: "Collaboration" },
+        { name: "Conflict Resolution & Facilitation", category: "Leadership" },
+        { name: "Scaled Agile (SAFe / LeSS) basics", category: "Scaling" },
+        { name: "Excel / Confluence reporting", category: "Reporting" }
+      ],
+      soft: [
+        "Servant Leadership",
+        "Empathetic Active Listening",
+        "Negotiation & Influence",
+        "Patience & Facilitation"
+      ]
+    },
+    education: {
+      certifications: [
+        { name: "Professional Scrum Master I (PSM I - Scrum.org)", cost: "$150", difficulty: "Beginner" },
+        { name: "Certified ScrumMaster (CSM - Scrum Alliance)", cost: "$400+", difficulty: "Beginner" },
+        { name: "PMI Agile Certified Practitioner (PMI-ACP)", cost: "$435", difficulty: "Advanced" }
+      ],
+      bootcamps: "Can offer good roleplay simulations for facilitating retrospective friction, but check if they cover Jira configuration, query structures, and metrics generation.",
+      degreeRequired: "Not mandatory. MBAs or communications/management degrees are popular, but the most direct pathways are constructed by transitioning from technical support, QA, or development roles using credentials."
+    },
+    portfolio: {
+      title: "Scrum Team Launch Playbook & Sprint Performance Report",
+      description: "A detailed blueprint outlining how to build and launch an agile team, configure backlog rules in Jira, run ceremonies, and analyze sprint delivery indicators.",
+      techStack: ["Jira Software", "Confluence", "Miro (Ceremony Templates)", "Excel (Telemetry charts)"],
+      features: [
+        "Structured Team Charter detailing roles, working agreements, and definition of done",
+        "Jira board setup schematic detailing custom workflow columns and transition rules",
+        "Sprint Retrospective playbook featuring interactive templates created on Miro boards",
+        "Comprehensive Sprint metrics analysis sheet comparing Velocity across 3 sprints",
+        "Detailed Impediment Log mapping blockers, dependency trackers, and mitigation actions"
+      ],
+      steps: [
+        "Draft the team's working agreements, outlining Standup schedules and code review SLAs.",
+        "Set up a Jira project workspace, creating issues, tags, and epic hierarchies.",
+        "Facilitate a mock Sprint Planning meeting, mapping estimations using planning poker.",
+        "Build burndown charts tracking mock daily tasks; analyze deviations.",
+        "Draft a Retro summary detailing items to start, stop, and continue.",
+        "Compile the metrics sheet showing delivery averages; create slides for review."
+      ]
+    },
+    resume: {
+      keywords: ["Scrum Master", "Agile Coach", "Jira", "Sprint Planning", "Daily Standup", "Sprint Retrospective", "Sprint Review", "Backlog Refinement", "Velocity", "Burndown Chart", "Servant Leadership", "Impediment Removal", "Kanban", "Scrum.org", "Agile Metrics"],
+      actionVerbs: ["Facilitated", "Coached", "Resolved", "Streamlined", "Led", "Optimized", "Empowered", "Tracked"],
+      metricsTemplate: "Facilitated agile transitions and optimized backlog refinement structures, boosting overall team velocity by 28% and increasing sprint goal delivery rates from 65% to 94%."
+    },
+    quiz: [
+      {
+        question: "Who is responsible for managing the priorities and values of items in the Product Backlog during Scrum sprints?",
+        options: ["The Scrum Master", "The Product Owner", "The Developers", "The Agile Sponsor"],
+        correctAnswerIndex: 1,
+        explanation: "The Product Owner is the sole owner of the Product Backlog. They represent business interests, defining features and sizing their priorities."
+      },
+      {
+        question: "What is the maximum duration recommended for the Daily Standup meeting?",
+        options: ["10 minutes", "15 minutes", "30 minutes", "None, it can run as long as needed"],
+        correctAnswerIndex: 1,
+        explanation: "The Daily Standup is a time-boxed event of exactly 15 minutes. It is designed to keep alignments rapid, tracking progress and highlighting blockers."
+      },
+      {
+        question: "What does the Burndown Chart track in sprint tracking views?",
+        options: [
+          "The budget expenditures of the company",
+          "The estimated remaining work (in story points/hours) plotted against the days remaining in the sprint timeline",
+          "The count of lines of code added by developers",
+          "The security alert events inside nodes"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "A burndown chart displays remaining effort over the sprint. An ideal trendline slopes to zero, indicating tasks are finishing on pace."
+      },
+      {
+        question: "In Scrum frameworks, what does 'Definition of Done' (DoD) signify?",
+        options: [
+          "The list of features the customer wants built",
+          "A shared, formal standard describing when a backlog item has satisfied all quality, review, testing, and deployment parameters to be declared shippable",
+          "The developer finished writing code on their local machine",
+          "The project manager approved billing totals"
+        ],
+        correctAnswerIndex: 1,
+        explanation: "The DoD is a quality agreement. It guarantees that any story declared 'done' matches necessary requirements (e.g. passed QA, documented, reviewed)."
+      },
+      {
+        question: "Which meeting ceremony occurs at the end of every Sprint to evaluate process bottlenecks, team friction, and agree on improvements?",
+        options: ["Sprint Review", "Sprint Retrospective", "Sprint Planning", "Refinement Meeting"],
+        correctAnswerIndex: 1,
+        explanation: "The Sprint Retrospective focus is the *team and process*. They reflect on what went well, what failed, and agree on actionable updates for the next sprint."
+      }
+    ],
+    interviewPrep: [
+      {
+        question: "How do you handle a team member who refuses to update their tasks on the Jira board?",
+        type: "behavioral",
+        hint: "Avoid mandate. Focus on empathy: discuss private alignments, explain the 'why' (metrics transparency, stakeholder reporting), ask about blockers, and work together on solutions.",
+        keywords: ["empathy", "understand", "why", "transparency", "coaching", "collaborate", "private", "blocker"]
+      },
+      {
+        question: "What is the difference between Velocity and Capacity, and how do they impact Sprint Planning?",
+        type: "technical",
+        hint: "Velocity is the average story points a team completes per sprint historically. Capacity is the availability of resources (vacations/holidays) for the upcoming sprint. Both define the commitment limit.",
+        keywords: ["velocity", "capacity", "story points", "availability", "history", "planning", "limit"]
+      },
+      {
+        question: "Tell me about a time you had to resolve a severe conflict within your agile team.",
+        type: "behavioral",
+        hint: "Explain identifying the root cause, bringing parties together in a neutral space, establishing guidelines, guiding them toward a shared agreement, and tracking team morale outcomes.",
+        keywords: ["situation", "task", "action", "result", "conflict", "neutral space", "active listening", "compromise", "agreements"]
+      },
+      {
+        question: "How do you coach a team that is carrying over multiple unfinished stories from sprint to sprint?",
+        type: "technical",
+        hint: "Investigate during Retros: are stories too large (need splitting)? Is testing lagging behind coding? Are blockers unresolved? Implement smaller sizing limits.",
+        keywords: ["carryover", "spillover", "splitting", "retro", "sizing", "work in progress", "wip", "testing"]
+      },
+      {
+        question: "How do you help a Product Owner write better user stories and manage backlog bloat?",
+        type: "technical",
+        hint: "Introduce INVEST criteria (Independent, Negotiable, Valuable, Estimable, Small, Testable) and set up recurring backlog refinement loops.",
+        keywords: ["invest", "refinement", "backlog", "po", "coaching", "user story", "prioritize"]
+      }
+    ],
+    learningResources: {
+      paid: [
+        { title: "Professional Scrum Master I (PSM I) Prep (Udemy)", price: "$15-$25", duration: "10 hours" },
+        { title: "Agile Crash Course: Agile Project Management (Udemy)", price: "$15-$20", duration: "8 hours" }
+      ],
+      youtube: [
+        { channel: "Scrum.org", desc: "The official masterclass guides covering agile roles, scaling patterns, standups, and certifications." },
+        { channel: "Development That Pays", desc: "Clear, animated summaries of agile, sprint, kanban, estimation, and scrum methodologies." }
+      ]
+    }
   }
 };
+

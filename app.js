@@ -56,6 +56,48 @@ const dailyChallenges = {
     "Examine a GitHub Actions YAML script mapping a continuous test suite runner.",
     "Write down a post-mortem layout addressing a simulated database connection pool exhaustion.",
     "Configure a basic Nginx reverse-proxy file block routing traffic to local ports."
+  ],
+  mobile_developer: [
+    "Write a simple layout using SwiftUI Stacks or Compose Rows, testing constraints.",
+    "Review standard iOS/Android local storage formats, comparing Keychain to SQLite setups.",
+    "Find a mobile open-source repository on GitHub and study their build configuration files.",
+    "Practice optimizing image sizes or local image cache pipelines on mobile simulators.",
+    "Draft a 2-page list detailing Apple App Store Connect submission steps."
+  ],
+  ai_researcher: [
+    "Write down the scaled dot-product attention equation, summarizing all term variables.",
+    "Examine PEFT tuning adapter setups, comparing LoRA rank dimensions.",
+    "Draft a ROUGE score comparison sheet evaluating domain translation runs.",
+    "Practice writing forward propagation loops for simple Multi-Layer Perceptrons.",
+    "Summarize local quantization libraries (e.g. llama.cpp vs vLLM hosting options)."
+  ],
+  data_engineer: [
+    "Practice writing CTE query chains, optimizing tables join indices.",
+    "Write a basic Airflow DAG file scheduling two sequential Python jobs.",
+    "Format a Parquet schema layout, examining columnar compression statistics.",
+    "Audit a snowflake warehouse configuration checking automated scaling controls.",
+    "Write down the ACID requirements, outlining Delta Lake capabilities."
+  ],
+  systems_admin: [
+    "Audit virtual subnets on local machines, calculating /26 host limitations.",
+    "Configure a test pfSense firewall routing rule preventing unauthorized connection entries.",
+    "Draft a PowerShell script listing all Active Directory users having expired accounts.",
+    "Review OpenVPN handshake packet captures in Wireshark directories.",
+    "Create a Zabbix alert configuration mapping CPU temperature limits."
+  ],
+  qa_automation: [
+    "Write a Page Object Model mapping class for a simple mock signup web page.",
+    "Test an API transaction route using Postman, verifying payload assertions.",
+    "Identify 3 flaky test scenarios, drafting locator changes to eliminate sleeps.",
+    "Configure Playwright browser test runners to run checks in parallel modes.",
+    "Review ISTQB guidelines summarizing test severity vs task priority levels."
+  ],
+  scrum_master: [
+    "Write down a Sprint Retrospective template utilizing the Start-Stop-Continue framework.",
+    "Create a Jira query listing tasks carried over from previous sprints.",
+    "Draft working agreements for a newly formed software engineering squad.",
+    "Practice facilitating Planning Poker estimations for 3 complex user stories.",
+    "Analyze a mock sprint burndown graph, identifying bottleneck indicators."
   ]
 };
 
